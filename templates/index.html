@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090d14" />
+  <title>{{ app_name or "Nexora | Knowledge Copilot" }}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <a class="brand" href="#" aria-label="Nexora home">
+          <span class="brand-mark"><span></span><span></span><span></span><span></span></span>
+          <span><b>Nexora</b><small>Knowledge Copilot</small></span>
+        </a>
+
+        <div class="workspace-label">WORKSPACE</div>
+        <button class="workspace-switch">
+          <span class="workspace-icon">N</span>
+          <span class="workspace-copy"><b>Nexora HQ</b><small>Enterprise workspace</small></span>
+          <span class="chevron">⌄</span>
+        </button>
+
+        <div class="nav-label">ASSISTANT</div>
+        <a class="nav-item active" href="#"><span class="nav-icon">✳</span> Knowledge Copilot <span class="nav-live"></span></a>
+        <a class="nav-item" href="#workflow"><span class="nav-icon">⌘</span> Agent workflow</a>
+        <button class="nav-item" id="openUpload"><span class="nav-icon">＋</span> Add knowledge document</button>
+
+        <div class="sidebar-divider"></div>
+        <div class="nav-label">KNOWLEDGE DOMAINS</div>
+        <div class="domain-item"><span class="domain-dot it"></span><span>IT & Infrastructure</span><small>01</small></div>
+        <div class="domain-item"><span class="domain-dot hr"></span><span>HR & Leave</span><small>02</small></div>
+        <div class="domain-item"><span class="domain-dot comp"></span><span>Compliance</span><small>03</small></div>
+      </div>
+
+      <div class="sidebar-bottom">
+        <div class="privacy-card">
+          <div class="privacy-icon">⌑</div>
+          <div><b>Private knowledge first</b><p>External search is used only when internal evidence is weak.</p></div>
+        </div>
+        <div class="profile">
+          <div class="profile-avatar">NR</div>
+          <div><b>Nexora Team</b><small>Employee access</small></div>
+          <span class="profile-more">•••</span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="breadcrumb"><span>Workspace</span><i>/</i><b>Knowledge Copilot</b></div>
+        <div class="topbar-right">
+          <div class="secure-label"><span class="secure-dot"></span> Secure environment</div>
+          <span class="topbar-divider"></span>
+          <div class="agent-chip"><span class="agent-pulse"></span> Agentic RAG <span class="chip-version">v1.0</span></div>
+        </div>
+      </header>
+
+      <section class="chat-layout">
+        <div class="chat-column">
+          <div class="page-intro">
+            <div class="eyebrow"><span class="eyebrow-line"></span> NEXORA INTELLIGENCE</div>
+            <h1>Your company knowledge,<br><em>one conversation away.</em></h1>
+            <p>Ask about internal IT, HR, leave policies and compliance. I'll find the right evidence before I answer.</p>
+          </div>
+
+          <section id="chat" class="chat-area" aria-live="polite">
+            <div class="welcome-card">
+              <div class="welcome-orb"><span>✳</span></div>
+              <div class="welcome-copy">
+                <div class="welcome-meta"><span class="online-dot"></span> COPILOT READY</div>
+                <h2>Good to have you here.</h2>
+                <p>I'm your Nexora knowledge assistant. Start with a question or choose a suggested prompt below.</p>
+              </div>
+            </div>
+
+            <div class="suggestion-heading"><span>GET STARTED</span><span class="suggestion-line"></span></div>
+            <div class="suggestion-grid">
+              <button class="suggestion-card" data-question="How do I connect to the corporate VPN?">
+                <span class="suggestion-icon purple">⌁</span><span><b>Connect to VPN</b><small>IT & system access</small></span><span class="suggestion-arrow">↗</span>
+              </button>
+              <button class="suggestion-card" data-question="What is our password reset policy?">
+                <span class="suggestion-icon blue">⌑</span><span><b>Password reset policy</b><small>Accounts & security</small></span><span class="suggestion-arrow">↗</span>
+              </button>
+              <button class="suggestion-card" data-question="How many annual leave days do employees receive?">
+                <span class="suggestion-icon amber">◷</span><span><b>Annual leave balance</b><small>HR & leave management</small></span><span class="suggestion-arrow">↗</span>
+              </button>
+              <button class="suggestion-card" data-question="What is the latest Microsoft Teams outage guidance?">
+                <span class="suggestion-icon green">⌘</span><span><b>Vendor outage guidance</b><small>External information</small></span><span class="suggestion-arrow">↗</span>
+              </button>
+            </div>
+          </section>
+
+          <div class="composer-area">
+            <div class="composer-hint"><span>↵</span> Enter to send <span class="hint-separator">·</span> Shift + Enter for a new line</div>
+            <form id="chatForm" class="composer">
+              <textarea id="question" rows="1" placeholder="Ask anything about Nexora..." required></textarea>
+              <button type="submit" id="sendBtn" class="send-btn" aria-label="Send question"><span>Ask Copilot</span><b>↑</b></button>
+            </form>
+            <div class="composer-foot"><span><i class="lock-icon">▣</i> Your conversations stay within this workspace.</span><span>AI can make mistakes. Verify critical policy decisions.</span></div>
+          </div>
+        </div>
+
+        <aside class="inspector" id="workflow">
+          <div class="inspector-header">
+            <div><div class="panel-eyebrow">OBSERVABILITY</div><h2>Agent activity</h2></div>
+            <span class="live-badge"><i></i> LIVE</span>
+          </div>
+          <p class="inspector-description">Follow the decisions made by your LangGraph agent for each request.</p>
+
+          <div class="run-card">
+            <div class="run-card-top"><span>LAST EXECUTION</span><span id="runStatus" class="run-status">IDLE</span></div>
+            <div class="run-card-value" id="runDuration">—</div>
+            <div class="run-card-caption" id="runCaption">Waiting for your first question</div>
+          </div>
+
+          <div class="trace-heading"><span>WORKFLOW TRACE</span><span id="traceCount">0 EVENTS</span></div>
+          <div id="trace" class="trace-list">
+            <div class="trace-empty"><div class="trace-empty-icon">⌘</div><b>No activity yet</b><span>Your agent's execution path will appear here.</span></div>
+          </div>
+
+          <div class="source-card">
+            <div class="source-card-heading"><span>FINAL SOURCE</span><span class="source-indicator"></span></div>
+            <div class="source-value" id="sourceUsed"><span class="source-dash">—</span><span>Not selected</span></div>
+            <p id="sourceDescription">The agent will select the strongest available evidence.</p>
+          </div>
+
+          <div class="architecture-note">
+            <div class="architecture-icon">✳</div>
+            <div><b>Evidence-led answers</b><p>Private KB → Evidence grade → Web fallback → Grounded response</p></div>
+          </div>
+        </aside>
+      </section>
+    </main>
+  </div>
+
+  <div id="uploadModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="uploadTitle">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-card">
+      <div class="modal-topline"><span class="modal-kicker">KNOWLEDGE MANAGEMENT</span><button id="closeUpload" class="close-modal" aria-label="Close">×</button></div>
+      <div class="upload-symbol">⇧</div>
+      <h2 id="uploadTitle">Add to company knowledge</h2>
+      <p class="modal-description">Upload an internal document to make it searchable by the Nexora Copilot.</p>
+      <label class="field-label" for="adminKey">ADMIN API KEY</label>
+      <input id="adminKey" class="modal-input" type="password" placeholder="Enter your admin key" autocomplete="off" />
+      <label class="field-label">DOCUMENT FILE</label>
+      <label class="drop-zone" for="fileInput" id="dropZone">
+        <span class="drop-icon">＋</span><b id="fileName">Choose a document or drag it here</b><small>PDF, TXT, Markdown or DOCX · Max size depends on server configuration</small>
+      </label>
+      <input id="fileInput" type="file" accept=".pdf,.txt,.md,.docx" hidden />
+      <button id="uploadBtn" class="upload-submit"><span>Index document</span><b>→</b></button>
+      <div id="uploadStatus" class="upload-status" role="status"></div>
+      <div class="modal-foot"><span>▣</span> Documents are processed and indexed by your backend.</div>
+    </div>
+  </div>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>

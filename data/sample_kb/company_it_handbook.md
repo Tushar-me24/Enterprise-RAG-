@@ -1,11 +1,11 @@
-# NovaRetail Internal IT Support Handbook
+# Nexora Internal IT Support Handbook
 
 ## Company Information
-Company Name: NovaRetail Technologies Pvt. Ltd.  
+Company Name: Nexora Technologies Pvt. Ltd.  
 Industry: Retail & E-commerce  
 Headquarters: Gurugram, India  
 Employees: 2,500+  
-IT Support Email: it-support@novaretail.example  
+IT Support Email: it-support@nexora.example  
 IT Support Contact: +91-120-456-7890  
 Support Hours: Monday to Saturday, 9:00 AM – 6:00 PM IST  
 
@@ -38,7 +38,7 @@ If an employee loses their registered device, they must immediately contact IT s
 
 ## Email Access and Troubleshooting
 
-All employees receive a corporate email account in the format firstname.lastname@novaretail.example.
+All employees receive a corporate email account in the format firstname.lastname@nexora.example.
 
 Employees can access their email through the company webmail portal or approved desktop applications.
 
@@ -98,13 +98,13 @@ Unauthorized software installation may result in restricted device access.
 
 ## Wi-Fi and Network Access
 
-NovaRetail provides separate wireless networks for employees and visitors.
+Nexora provides separate wireless networks for employees and visitors.
 
 Employee Wi-Fi:
-Network Name: NovaRetail-Internal
+Network Name: Nexora-Internal
 
 Guest Wi-Fi:
-Network Name: NovaRetail-Guest
+Network Name: Nexora-Guest
 
 Employees must connect to the internal network using their corporate credentials. Guest Wi-Fi is restricted to internet access and cannot access internal company resources.
 
@@ -131,7 +131,7 @@ Access to confidential information requires appropriate departmental authorizati
 
 ## IT Support Ticket Policy
 
-Employees must create an IT support ticket for technical issues through the NovaRetail Service Portal.
+Employees must create an IT support ticket for technical issues through the Nexora Service Portal.
 
 Every ticket should include:
 - Employee ID.

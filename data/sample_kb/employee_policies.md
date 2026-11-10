@@ -1,12 +1,12 @@
-# NovaRetail Employee HR & Leave Policy Handbook
+# Nexora Employee HR & Leave Policy Handbook
 
 ## Company Information
 
-Company Name: NovaRetail Technologies Pvt. Ltd.  
+Company Name: Nexora Technologies Pvt. Ltd.  
 Industry: Retail & E-commerce  
 Headquarters: Gurugram, India  
 Employees: 2,500+  
-HR Department Email: hr@novaretail.example  
+HR Department Email: hr@nexora.example  
 HR Support Contact: +91-120-456-7800  
 Working Days: Monday to Friday  
 Standard Working Hours: 9:00 AM – 6:00 PM IST  
@@ -91,7 +91,7 @@ Employees should contact HR for assistance with maternity benefit applications a
 
 ## Paternity Leave Policy
 
-NovaRetail provides eligible male employees with 10 working days of paid paternity leave following the birth or adoption of a child.
+Nexora provides eligible male employees with 10 working days of paid paternity leave following the birth or adoption of a child.
 
 Guidelines:
 - Employees should notify HR and their reporting manager in advance whenever possible.
@@ -118,7 +118,7 @@ WFH approval is not automatic and depends on business requirements.
 
 ## Leave Application Procedure
 
-All employees must submit leave applications through the NovaRetail HRMS portal.
+All employees must submit leave applications through the Nexora HRMS portal.
 
 Application process:
 1. Log in to the HRMS portal using corporate credentials.
@@ -153,7 +153,7 @@ If a leave request remains pending for more than 2 business days, employees may 
 
 ## Public Holidays Policy
 
-NovaRetail publishes an annual holiday calendar at the beginning of each calendar year.
+Nexora publishes an annual holiday calendar at the beginning of each calendar year.
 
 The holiday calendar includes:
 - National holidays.
@@ -231,7 +231,7 @@ Any leave balance displayed in HRMS is subject to verification by HR.
 
 ## Employee Exit and Leave Settlement
 
-Employees resigning from NovaRetail must complete the official exit process.
+Employees resigning from Nexora must complete the official exit process.
 
 Guidelines:
 - Employees must submit their resignation through the HRMS portal.
@@ -245,7 +245,7 @@ Casual leave and sick leave are not eligible for encashment.
 
 ## Frequently Asked Questions
 
-Q1. How many total paid leave days does NovaRetail provide annually?
+Q1. How many total paid leave days does Nexora provide annually?
 
 Answer: The standard annual entitlement includes 24 days of Annual Leave, 6 days of Casual Leave, 6 days of Sick Leave, and 12 days of Earned Leave, subject to eligibility and applicable policy rules.
 
@@ -277,7 +277,7 @@ Q8. How many maternity leave weeks are available?
 
 Answer: Eligible employees may receive up to 26 weeks for the first two surviving children under applicable Indian maternity benefit legislation.
 
-Q9. Does NovaRetail offer paternity leave?
+Q9. Does Nexora offer paternity leave?
 
 Answer: Yes. Eligible male employees receive 10 working days of company-provided paid paternity leave.
 
@@ -299,15 +299,15 @@ Answer: Managers should generally review normal leave requests within 2 business
 
 Q14. Where can I check my remaining leave balance?
 
-Answer: Employees can view their current leave balance through the NovaRetail HRMS portal.
+Answer: Employees can view their current leave balance through the Nexora HRMS portal.
 
 ## HR Contact Information
 
-HR Department: NovaRetail Human Resources  
-Email: hr@novaretail.example  
+HR Department: Nexora Human Resources  
+Email: hr@nexora.example  
 Contact: +91-120-456-7800  
 Working Hours: Monday to Friday, 9:00 AM – 6:00 PM IST  
-Portal: NovaRetail HRMS
+Portal: Nexora HRMS
 
 For policy clarification, leave balance discrepancies, or unresolved leave requests, employees should contact the HR Department.
 

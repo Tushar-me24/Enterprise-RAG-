@@ -5,7 +5,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyMuPDFLoader , TextLoader
 from docx import Document as DocxDocument
 
-supported = {".pdf" , ".txt" , ".md" , ".docx"}
+SUPPORTED_FILE_TYPES = {".pdf" , ".txt" , ".md" , ".docx"}
 
 
 #Loading the Documents

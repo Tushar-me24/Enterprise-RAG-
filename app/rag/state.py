@@ -1,0 +1,25 @@
+from typing import List , Literal , Optional
+from typing_extensions import TypedDict
+from pydantic import BaseModel , Field
+from langchain_core.documents import Document
+
+class RouteDecision(BaseModel):
+    route: Literal["kb", "direct"] = Field(
+        description="Use kb for questions needing company docs; direct for greetings/simple chat"
+    )
+    
+class EvidenceGrade(BaseModel):
+    grade: Literal["good" , "weak"] = Field(description="good means evidence can answer the question , bad means evidence is not enough to answer")
+
+class AgentState(TypedDict):
+    question:str
+    current_query: str
+    kb_docs: List[Document]
+    web_results: str
+    web_grade: str
+    kb_grade: str
+    answer: str
+    source_used: str
+    retry_count: int
+    trace: List[str]
+    citations: List[str]
