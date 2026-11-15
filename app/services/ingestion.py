@@ -4,6 +4,7 @@ from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyMuPDFLoader , TextLoader
 from docx import Document as DocxDocument
+from app.services.chunking import chunk_document
 
 SUPPORTED_FILE_TYPES = {".pdf" , ".txt" , ".md" , ".docx"}
 
@@ -23,7 +24,4 @@ def load_file(path: Path) -> List[Document]:
 
 
 
-#Chunking the documents
-def chunk_document(docs: Iterable[Document]) -> List[Document]:
-    splitter = RecursiveCharacterTextSplitter(chunk_size = 1200 , chunk_overlap = 120 , add_start_index=True)
-    return splitter.split_documents(list(docs))
+
