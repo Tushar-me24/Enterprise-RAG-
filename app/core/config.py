@@ -15,7 +15,7 @@ class Settings(BaseSettings):
     embedding_model: str = "text-embedding-3-small"
     groq_model: str = "openai/gpt-oss-120b"
     top_k: int = 4
-    max_retries: int = 1
+    max_retries: int = 2
     admin_api_key: str = "change-me"
     audit_db_path: str = str(BASE_DIR / "data" / "audit.db")
     upload_dir: str = str(BASE_DIR / "uploads")

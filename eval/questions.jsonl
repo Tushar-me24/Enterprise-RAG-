@@ -1,0 +1,30 @@
+{"id":"kb-01","category":"kb","question":"How many annual leave days do employees receive?","expected_source":"private_kb","must_include":["24"],"must_not_include":["25 days"],"verified":true}
+{"id":"kb-02","category":"kb","question":"What is our password reset policy?","expected_source":"private_kb","must_include":["portal"],"verified":true}
+{"id":"kb-03","category":"kb","question":"How many failed login attempts lock an account?","expected_source":"private_kb","must_include":[["5","five"]],"verified":true}
+{"id":"kb-04","category":"kb","question":"What is the minimum password length?","expected_source":"private_kb","must_include":[["14","fourteen"]],"verified":true}
+{"id":"kb-05","category":"kb","question":"How many casual leave days do I get per year?","expected_source":"private_kb","must_include":[["6","six"]],"verified":true}
+{"id":"kb-06","category":"kb","question":"How many sick leave days are allowed?","expected_source":"private_kb","must_include":[["6","six"]],"verified":true}
+{"id":"kb-07","category":"kb","question":"How many earned leave days are there and what is the maximum I can accumulate?","expected_source":"private_kb","must_include":["12","30"],"verified":true}
+{"id":"kb-08","category":"kb","question":"Can unused earned leave be encashed?","expected_source":"private_kb","must_include":[["encash"]],"verified":true}
+{"id":"kb-09","category":"kb","question":"How long is paternity leave?","expected_source":"private_kb","must_include":["10"],"verified":true}
+{"id":"kb-10","category":"kb","question":"How many weeks of maternity leave are provided?","expected_source":"private_kb","must_include":["26"],"verified":true}
+{"id":"kb-11","category":"kb","question":"What is the mailbox storage limit?","expected_source":"private_kb","must_include":[["10 gb","10gb"]],"verified":true}
+{"id":"kb-12","category":"kb","question":"What are the data security classification levels?","expected_source":"private_kb","must_include":["public","internal","confidential"],"verified":true}
+{"id":"kb-13","category":"kb","question":"What are the IT support ticket priority levels?","expected_source":"private_kb","must_include":["p1","p4"],"verified":true}
+{"id":"kb-14","category":"kb","question":"What should I do if my laptop is stolen?","expected_source":"private_kb","must_include":[["report"]],"verified":true}
+{"id":"kb-15","category":"kb","question":"What is the initial response target for a P1 critical ticket?","expected_source":"private_kb","must_include":[["30 minutes","30 min"]],"verified":true}
+{"id":"kb-16","category":"kb","question":"How long does standard software installation take?","expected_source":"private_kb","must_include":[["two business days","2 business days"]],"verified":true}
+{"id":"kb-17","category":"kb","question":"How many days in advance should I apply for planned annual leave?","expected_source":"private_kb","must_include":[["5 working days","five working days"]],"verified":true}
+{"id":"kb-18","category":"kb","question":"What are the IT support working hours?","expected_source":"private_kb","must_include":[["saturday"]],"verified":true}
+{"id":"personal-01","category":"personal","question":"how many leaves i have?","expected_source":"private_kb","must_include":[["24","hrms","portal"]],"verified":true}
+{"id":"personal-02","category":"personal","question":"What is my current leave balance?","expected_source":"private_kb","must_include":[["hrms","portal"]],"verified":true}
+{"id":"paraphrase-01","category":"paraphrase","question":"wat is the leave policy for sick days","expected_source":"private_kb","must_include":[["6","six"]],"verified":true}
+{"id":"paraphrase-02","category":"paraphrase","question":"can i work from home?","expected_source":"private_kb","must_include":[["approval","approve"]],"verified":true}
+{"id":"paraphrase-03","category":"paraphrase","question":"I forgot my password and I'm locked out","expected_source":"private_kb","must_include":[["portal","service desk"]],"verified":true}
+{"id":"direct-01","category":"direct","question":"hi","expected_source":"direct","verified":true}
+{"id":"direct-02","category":"direct","question":"thanks, bye!","expected_source":"direct","verified":true}
+{"id":"direct-03","category":"direct","question":"hello, how are you?","expected_source":"direct","verified":true}
+{"id":"web-01","category":"web","question":"What is the latest Microsoft Teams outage guidance?","expected_source":"web_search","must_include":[["external","web"]],"verified":true}
+{"id":"web-02","category":"web","question":"What is the latest Zoom outage guidance?","expected_source":"web_search","must_include":[["external","web"]],"verified":true}
+{"id":"unanswerable-01","category":"unanswerable","question":"What is Nexora's policy on cryptocurrency salary payments?","expected_source":["insufficient_evidence"],"verified":true}
+{"id":"unanswerable-02","category":"unanswerable","question":"What is the Friday dress code at the Singapore branch?","expected_source":["insufficient_evidence"],"verified":true}
